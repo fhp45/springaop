@@ -1,0 +1,13 @@
+#配置数据源
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/mybatis?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
+    username: root
+    password: password
+  application:
+    name: user-aop
+
+#配置pojo和mapper
+mybatis:
+  type-aliases-package: com.fhp.springaop.domain
+  mapper-locations: classpath:mapper/*Mapper.xml
